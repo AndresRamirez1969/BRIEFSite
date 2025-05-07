@@ -1,4 +1,10 @@
 body, html {
   margin: 0;
-  padding: 0;
+  padding-top: 50px;
+  cursor: url('/cursors/logoblack.png'), auto;
+  background-color: #c8c5c5eb;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

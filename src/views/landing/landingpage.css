@@ -4,17 +4,75 @@
     font-family: 'Franklin Gothic Medium', monospace;
 }
 
+.landing-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tomorrow-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
 .button-link {
     display: inline-block;
     text-decoration: none;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding: 0.75rem 1.5rem;
     background-color: rgb(249, 42, 42);
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+}
+
+.spotify-link {
+    display: inline-block;
+    margin-top: 0%;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #1DB954;
+    border-radius: 10px;
+    size: 10ch;
+}
+
+.youtube-link {
+    display: inline-block;
+    margin-top: 0%;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    size: 10ch;
+}
+
+.youtube-link:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.streaming-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tomorrow-image img {
+    width: 600px;
+    height: auto;
+    display: block;
+}
+
+.spotify-link:hover {
+    background-color: #1DB954;
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .button-link:hover {
