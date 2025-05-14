@@ -4,6 +4,7 @@
     font-family: 'Franklin Gothic Medium', monospace;
 }
 
+
 .landing-wrapper {
     display: flex;
     flex-direction: column;
@@ -77,4 +78,10 @@
 
 .button-link:hover {
     background-color: rgb(248, 116, 116);
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

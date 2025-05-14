@@ -1,0 +1,20 @@
+
+.contacto-wrapper {
+    background-image: url(../../imgs/sesion1.jpg);
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+}
+
+.contacto-wrapper .custom-font {
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', monospace;
+    color: white;
+}
+
+.contacto-wrapper .rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}

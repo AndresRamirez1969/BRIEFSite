@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import atrocity from '../../imgs/atrocity.jpg'
 import tomorrow from '../../imgs/tomorrow.png'
 import './landingpage.css'
@@ -14,7 +14,7 @@ const LandingPage = () => {
                 alt="Description" 
                 style={{ width: '600px', height: 'auto', margin: 0, padding: 0, display: 'block'}} />
         <div style={{ textAlign: 'center', padding: '2rem', flex: 1}}>
-            <h1 className='custom-font'>Escucha Nuestro Nuevo Sencillo</h1>
+            <h1 className='rubik-glitch-regular'>Escucha Nuestro Nuevo Sencillo</h1>
             <iframe
                 width="100%"
                 height="400"
@@ -37,7 +37,7 @@ const LandingPage = () => {
             <div className="tomorrow-image">
                 <img src={tomorrow} alt="Tomorrow image" />
                 <div style={{ textAlign: 'center', padding: '2rem', flex: 1}}>
-                    <h1 className='custom-font'>Escucha Tomorrow</h1>
+                    <h1 className='rubik-glitch-regular'>Escucha Tomorrow</h1>
                     <iframe
                         width="100%"
                         height="400"
@@ -47,7 +47,7 @@ const LandingPage = () => {
                         style={{ border: "none"}}
                     ></iframe>
                     <div className='streaming-links'>
-                        <a href="https://open.spotify.com/track/3qVLf1ZkJwT1rq60rvMeb1?si=5f6f8f4fbe9447f7" target='_blank' rel="noopener noreferrer" className='spotify-link'>
+                        <a href="https://open.spotify.com/track/1Z1zr5Y9Sg6SiZGr8nBF0I?si=eb42d13f88294277" target='_blank' rel="noopener noreferrer" className='spotify-link'>
                             <SpotifyOutlined style={{ fontSize: '35px'}}/>
                         </a>
                         <a href="https://music.youtube.com/watch?v=S-2Po3uVQno" target='_blank' rel="noopener noreferrer" className='youtube-link'>
@@ -56,6 +56,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };
