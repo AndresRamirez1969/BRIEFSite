@@ -34,8 +34,8 @@ export const Navbar = () => {
             <div className='nav-content'>
             <div className="nav-left">
                 <img src={logowhite} alt="Logo" className="nav-logowhite"/>
-                <a href="/tocadas">Tocadas</a>
-                <a href="/noticias">Noticias</a>
+                <a href="/">Home</a>
+                <a href="/nosotros">Bio</a>
             </div>
             <div className="nav-center">
                 <Link to="/">
@@ -44,7 +44,7 @@ export const Navbar = () => {
             </div>
             <div className="nav-right">
                 <a href="/contacto">Contacto</a>
-                <a href="/FAQ">FAQ</a>
+                <a href="/tocadas">Shows</a>
                 <img src={logowhite} alt="Logo" className="nav-logowhite"/>
             </div>
             </div>

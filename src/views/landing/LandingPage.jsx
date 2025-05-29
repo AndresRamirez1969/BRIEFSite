@@ -27,7 +27,7 @@ const LandingPage = () => {
             <a href="https://open.spotify.com/track/3qVLf1ZkJwT1rq60rvMeb1?si=5f6f8f4fbe9447f7" target='_blank' rel="noopener noreferrer" className='spotify-link'>
                 <SpotifyOutlined style={{ fontSize: '35px'}}/>
             </a>
-            <a href="https://music.youtube.com/watch?v=S-2Po3uVQno" target='_blank' rel="noopener noreferrer" className='youtube-link'>
+            <a href="https://music.youtube.com/watch?v=zoT6xw1BM-8&si=4LsUQMMLy0899Zer" target='_blank' rel="noopener noreferrer" className='youtube-link'>
                 <YoutubeOutlined style={{ fontSize: '35px'}}/>
             </a>
                 

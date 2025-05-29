@@ -1,15 +1,22 @@
 import React, {useEffect, useState} from 'react';
 
 const Tocadas = () => {
-    const [shows, setShows] = useState([]);
     useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "https://widget.seated.com/app.js";
-        script.async = true;
-        document.body.appendChild(script);
+        const handleLoad = () => {
+            const script = document.createElement('script');
+            script.src = "https://widget.seated.com/app.js";
+            script.async = true;
+            document.body.appendChild(script);
+        };
+
+        if (document.readyState === 'complete') {
+            handleLoad();
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
 
         return () => {
-            document.body.removeChild(script);
+            window.removeEventListener('load', handleLoad);
         };
     }, []);
 

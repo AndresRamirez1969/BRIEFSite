@@ -1,0 +1,23 @@
+.custom-font {
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', monospace;
+}
+
+.nosotros-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-image {
+    transition: transform 0.3s ease;
+}
+
+.member-image:hover {
+    transform: scale(1.05);
+}
+
+.rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form, Button, message, Input} from "antd";
+import { Form, Button, Input} from "antd";
+import { Toaster, toast } from 'sonner';
 import emailjs from 'emailjs-com';
 import './contacto.css';
 import TextArea from 'antd/es/input/TextArea';
@@ -20,10 +21,10 @@ const Contacto = () => {
             'YmOC7UMWHE9njihmO'
         ).then(
             () => {
-                message.success("Se mando el correo.");
+                toast.success("Se mando el correo.");
             },
             () => {
-                message.error("Error al mandar correo, intente de nuevo.");
+                toast.error("Error al mandar correo, intente de nuevo.");
             }
         );
     };
@@ -31,6 +32,7 @@ const Contacto = () => {
         <div
             className="contacto-wrapper">
         <div style={{ display: 'flex', alignItems: 'center', marginTop: 20, justifyContent: 'center', textAlign: "center", flexDirection: 'column'}}>
+            <Toaster position="top-right" richColors />
             <div style={{ marginBottom: 10}}>
               <h1 className='rubik-glitch-regular'>Mandanos un correo</h1>
               </div>
