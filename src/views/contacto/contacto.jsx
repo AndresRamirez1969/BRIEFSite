@@ -4,6 +4,7 @@ import { Toaster, toast } from 'sonner';
 import emailjs from 'emailjs-com';
 import './contacto.css';
 import TextArea from 'antd/es/input/TextArea';
+import { motion } from 'framer-motion';
 
 const { Item } = Form;
 
@@ -29,6 +30,11 @@ const Contacto = () => {
         );
     };
     return(
+        <motion.div
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{ duration: 0.8}}
+        >
         <div
             className="contacto-wrapper">
         <div style={{ display: 'flex', alignItems: 'center', marginTop: 20, justifyContent: 'center', textAlign: "center", flexDirection: 'column'}}>
@@ -90,6 +96,7 @@ const Contacto = () => {
                 </Form>
         </div>
         </div>
+        </motion.div>
     );
 }
 

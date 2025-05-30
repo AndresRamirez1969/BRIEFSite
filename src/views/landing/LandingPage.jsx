@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import atrocity from '../../imgs/atrocity.jpg'
 import tomorrow from '../../imgs/tomorrow.png'
 import './landingpage.css'
 import { SpotifyOutlined, YoutubeOutlined } from '@ant-design/icons';
+import { motion } from 'framer-motion';
 
 
 const LandingPage = () => {
     return (
+        <motion.div
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{ duration: 0.8}}
+        >
         <div className="landing-wrapper">
         <div style={{ display: 'flex', alignItems: 'flex-start'}}>
             <img 
@@ -58,6 +64,7 @@ const LandingPage = () => {
             </div>
             
         </div>
+        </motion.div>
     );
 };
 

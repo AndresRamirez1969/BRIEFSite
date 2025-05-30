@@ -7,8 +7,8 @@ import './nosotros.css';
 
 const Nosotros = () => {
     return (
-        <div 
-            style={{ 
+        <div
+            style={{  
                 display: 'flex', // row layout
                 justifyContent: 'center', // center the row
                 alignItems: 'flex-start', // align items to top

@@ -4,8 +4,9 @@
 }
 
 .nosotros-wrapper {
-    display: flex;
-    flex-direction: column;
+    background-image: url(../../imgs/Back-EPK.png);
+    background-size: cover;
+    background-position: center top;
 }
 
 .member-image {
