@@ -4,9 +4,16 @@ import Mario from '../../imgs/Mario.jpg';
 import Luis from '../../imgs/Luis.jpg';
 import Billy from '../../imgs/Billy.jpg';
 import './nosotros.css';
+import { motion } from 'framer-motion';
 
 const Nosotros = () => {
     return (
+        <motion.div
+                    initial={{ opacity: 0}}
+                    animate={{ opacity: 1}}
+                    transition={{ duration: 0.8}}
+                    exit={{ opacity: 0, y: -20 }}
+                >
         <div
             style={{  
                 display: 'flex', // row layout
@@ -42,6 +49,7 @@ const Nosotros = () => {
                 ))}
                 <h1></h1>
         </div>
+        </motion.div>
     )
 };
 

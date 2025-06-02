@@ -11,7 +11,7 @@ import { AnimatePresence } from 'framer-motion';
 const Animated = () => {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <Routes
         location={location}
         key={location.pathname}
@@ -29,12 +29,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/tocadas" element={<Tocadas />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-      </Routes>
+      <Animated />
     </Router>
   );
 }

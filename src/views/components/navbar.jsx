@@ -34,17 +34,17 @@ export const Navbar = () => {
             <div className='nav-content'>
             <div className="nav-left">
                 <img src={logowhite} alt="Logo" className="nav-logowhite"/>
-                <a href="/" viewTransition>Home</a>
-                <a href="/nosotros" viewTransition>Bio</a>
+                <Link to="/">Home</Link>
+                <Link to="/nosotros">Bio</Link>
             </div>
             <div className="nav-center">
                 <Link to="/" viewTransition>
-                <img src={logo} alt="Logo" className="nav-logo" href="/" />
+                <img src={logo} alt="Logo" className="nav-logo"/>
                 </Link>
             </div>
             <div className="nav-right">
-                <a href="/contacto" viewTransition>Contacto</a>
-                <a href="/tocadas" viewTransition>Shows</a>
+                <Link to="/contacto">Contacto</Link>
+                <Link to="/tocadas">Shows</Link>
                 <img src={logowhite} alt="Logo" className="nav-logowhite"/>
             </div>
             </div>

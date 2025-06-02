@@ -12,6 +12,7 @@ const LandingPage = () => {
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ duration: 0.8}}
+            exit={{ opacity: 0, y: -20 }}
         >
         <div className="landing-wrapper">
         <div style={{ display: 'flex', alignItems: 'flex-start'}}>
