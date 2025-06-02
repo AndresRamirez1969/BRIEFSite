@@ -1,0 +1,8 @@
+.tocadas-wrapper {
+    background-image: url(../../imgs/Back-EPK.png);
+    background-size: cover;
+    background-position: top center;
+    min-height: 120vh;
+    margin: 0;
+    padding: 0;
+}

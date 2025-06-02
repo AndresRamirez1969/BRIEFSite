@@ -18,7 +18,7 @@ const LandingPage = () => {
             <img 
                 src={atrocity} 
                 alt="Description" 
-                style={{ width: '600px', height: 'auto', margin: 0, padding: 0, display: 'block'}} />
+                style={{ width: '600px', height: 'auto', margin: 0, padding: 0, display: 'block', borderRadius: '8px'}} />
         <div style={{ textAlign: 'center', padding: '2rem', flex: 1}}>
             <h1 className='rubik-glitch-regular'>Escucha Nuestro Nuevo Sencillo</h1>
             <iframe

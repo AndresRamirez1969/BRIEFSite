@@ -16,7 +16,7 @@ const Nosotros = () => {
                 marginTop: '10px',
                 padding: '20px'
                 }}>
-                {[{ src: Andres, name: "Andres"}, { src: Billy, name: "Billy"}, { src: Mario, name: "Mario"}, { src: Luis, name: "Luis"}].map((member, index) => (
+                {[{ src: Andres, name: "Andres", role: "Guitarra/Voz"}, { src: Billy, name: "Billy", role: "Voz"}, { src: Mario, name: "Mario", role: "Bajo"}, { src: Luis, name: "Luis", role: "Batería/Voz"}].map((member, index) => (
                     <div
                         key={index}
                         style={{
@@ -32,11 +32,15 @@ const Nosotros = () => {
                             className="member-image"
                             style={{ width: '100%', height: 'auto', borderRadius: '8px'}}
                         />
-                        <p className='rubik-glitch-regular' style={{ textAlign: 'center', marginTop: '10px', fontSize: '30px'}}>
+                        <p className='rubik-glitch-regular' style={{ textAlign: 'center', marginTop: '10px', fontSize: '30px', lineHeight: '1.1'}}>
                             {member.name}
+                        </p>
+                        <p className='rubik-glitch-regular' style={{ textAlign: 'center', fontSize: '15px', marginTop: '0.5px', lineHeight: '0.1'}}>
+                            {member.role}
                         </p>
                     </div>
                 ))}
+                <h1></h1>
         </div>
     )
 };
