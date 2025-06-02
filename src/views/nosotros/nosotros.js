@@ -5,6 +5,7 @@ import Luis from '../../imgs/Luis.jpg';
 import Billy from '../../imgs/Billy.jpg';
 import './nosotros.css';
 import { motion } from 'framer-motion';
+import { InstagramOutlined, SpotifyFilled, AppleOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 const Nosotros = () => {
     return (
