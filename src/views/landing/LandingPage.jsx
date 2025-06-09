@@ -24,11 +24,11 @@ const LandingPage = () => {
             <h1 className='rubik-glitch-regular'>Escucha Nuestro Nuevo Sencillo</h1>
             <iframe
                 width="100%"
-                height="400"
+                height="420"
                 src="https://www.youtube.com/embed/AcoIgzjy-uQ"
                 title="Youtube player"
                 allow="accelerometer; autoplay; local-fonts; fullscreen;"
-                style={{ border: "none"}}
+                style={{ borderRadius: "9px"}}
             ></iframe>
             <div className='streaming-links'>
             <a href="https://open.spotify.com/track/3qVLf1ZkJwT1rq60rvMeb1?si=5f6f8f4fbe9447f7" target='_blank' rel="noopener noreferrer" className='spotify-link'>
@@ -41,18 +41,30 @@ const LandingPage = () => {
             </div>
         </div>
         </div>
-            <div className="tomorrow-image">
-                <img src={tomorrow} alt="Tomorrow image" />
+            <div style={{ textAlign: 'left', display: 'block'}}>
                 <div style={{ textAlign: 'center', padding: '2rem', flex: 1}}>
-                    <h1 className='rubik-glitch-regular'>Escucha Tomorrow</h1>
+                    <h1 className='rubik-glitch-regular'>Mas Canciones</h1>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem'}}>
+                        <div style={{ maxWidth: '300px', textAlign: 'left'}}>
+                            <p className='rubik-glitch-regular'>I'm holding on, together in the corner I wait</p>
+                            <p className='rubik-glitch-regular'>I'm surrounded by, the breeding and breathing I hate</p>
+                            <p className='rubik-glitch-regular'>Because it's in those eyes of yours that I am leaving</p>
+                            <p className='rubik-glitch-regular'>Long story short I just keep digging, digging, digging</p>
+                        </div>
                     <iframe
-                        width="100%"
-                        height="400"
+                        width="60%"
+                        height="500"
                         src="https://www.youtube.com/embed/AbO-v0WwVmo"
                         title="Youtube player"
                         allow="accelerometer; autoplay; local-fonts; fullscreen;"
-                        style={{ border: "none"}}
+                        style={{ borderRadius: "9px"}}
                     ></iframe>
+                        <div style={{ maxWidth: '300px', textAlign: 'right'}}>
+                            <p className='rubik-glitch-regular'>Tomorrow simplified time goes by</p>
+                            <p className='rubik-glitch-regular'>Because I have been wronged</p>
+                            <p className='rubik-glitch-regular'>I've been wronged</p>
+                        </div>
+                    </div>
                     <div className='streaming-links'>
                         <a href="https://open.spotify.com/track/1Z1zr5Y9Sg6SiZGr8nBF0I?si=eb42d13f88294277" target='_blank' rel="noopener noreferrer" className='spotify-link'>
                             <SpotifyOutlined style={{ fontSize: '35px'}}/>
